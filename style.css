@@ -54,7 +54,6 @@ h1 {
         opacity: 0;
         transform: translateY(10px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -85,7 +84,6 @@ h1 {
     width: 100px;
     height: 100px;
 }
-
 /* 🔎 Search Section */
 .search-section {
     margin-bottom: 30px;
@@ -131,7 +129,6 @@ h1 {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     opacity: 0.95;
 }
-
 .error-message {
     background: #ffe6e6;
     color: #b30000;
@@ -166,12 +163,10 @@ h1 {
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(360deg);
     }
 }
-
 /* 🌤️ Forecast Section */
 .forecast-section {
     margin-top: 30px;
@@ -185,7 +180,6 @@ h1 {
     margin-bottom: 20px;
     text-align: center;
 }
-
 /* 📦 Forecast Grid */
 .forecast-container {
     display: grid;
@@ -208,7 +202,6 @@ h1 {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-
 /* 📅 Day Name */
 .forecast-card h4 {
     font-size: 1.1rem;
@@ -237,7 +230,6 @@ h1 {
     width: 60px;
     height: 60px;
 }
-
 /* 📱 Mobile Responsive */
 @media (max-width: 768px) {
 
@@ -256,4 +248,63 @@ h1 {
     .forecast-card p:first-of-type {
         font-size: 1.4rem;
     }
+}
+/* 🔎 Recent Searches Section */
+.recent-searches-section {
+    margin: 20px 0;
+    display: none; /* Hidden by default */
+}
+
+.recent-searches-section h4 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Container */
+#recent-searches-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Buttons */
+.recent-search-btn {
+    padding: 8px 16px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.recent-search-btn:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+/* Click */
+.recent-search-btn:active {
+    transform: scale(0.95);
+}
+.clear-history-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clear-history-btn:hover {
+    background: #ff4d4d;
+    color: white;
+    border-color: #ff4d4d;
 }
