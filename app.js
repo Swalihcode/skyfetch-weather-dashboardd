@@ -126,7 +126,7 @@ function showLoading() {
     const loadingHTML = `
         <div class="loading-container">
             <div class="spinner"></div>
-            <p>Loading weather data...</p>
+            <p>Loading weather data....</p>
         </div>
     `;
 
